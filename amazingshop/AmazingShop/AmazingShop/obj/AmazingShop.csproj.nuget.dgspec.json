@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\Xây dựng mô  hình 3 lớp\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\AmazingShop.csproj": {}
+    "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\XDmohinh3lop\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\AmazingShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\Xây dựng mô  hình 3 lớp\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\AmazingShop.csproj": {
+    "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\XDmohinh3lop\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\AmazingShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\Xây dựng mô  hình 3 lớp\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\AmazingShop.csproj",
+        "projectUniqueName": "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\XDmohinh3lop\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\AmazingShop.csproj",
         "projectName": "AmazingShop",
-        "projectPath": "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\Xây dựng mô  hình 3 lớp\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\AmazingShop.csproj",
+        "projectPath": "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\XDmohinh3lop\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\AmazingShop.csproj",
         "packagesPath": "C:\\Users\\nhatquyen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\Xây dựng mô  hình 3 lớp\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\obj\\",
+        "outputPath": "C:\\Users\\nhatquyen\\Desktop\\Learning\\Năm 4\\XDmohinh3lop\\banhang\\amazingshop\\AmazingShop\\AmazingShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nhatquyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"

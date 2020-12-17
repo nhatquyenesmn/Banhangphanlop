@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    var catalog = ViewData["catalog"] as IEnumerable<AmazingShop.Models.Catalog>;
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -37,13 +40,16 @@
                             <li class="nav-item"><a class="nav-link" href="@Url.Action("Index","Home")">Home</a></li>
                             <li class="nav-item submenu dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                   aria-expanded="false" href="@Url.Action("Category","Home")">Shop</a>
+                                   aria-expanded="false" asp-controller="Home" asp-action="Category">Shop</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Category","Home")">Máy vi tính</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("ProductDetails","Home")">Bàn phím</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Checkout","Home")">Chuột</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Confirmation","Home")">Tai nghe</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Cart","Home")">Loa</a></li>
+                                    @if(catalog != null)
+                                    {
+                                        foreach(var item in catalog)
+                                        {
+
+                                            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Category" asp-route-id="@item.ID">@item.catalog_name</a></li>
+                                        }
+                                    }
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="@Url.Action("Blog","Home")">Blog</a></li>
